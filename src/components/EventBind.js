@@ -7,14 +7,20 @@ export class EventBind extends Component {
         this.state = {
             message: 'Hello'
         }
-        this.clickHandler = this.clickHandler.bind(this)
+        /* this.clickHandler = this.clickHandler.bind(this) */
     }
-    clickHandler() {
-        console.log(this)
+    //var a = 10
+    clickHandler = () => {
         this.setState({
-            message: 'Goodbye'
+            message: 'Konnichiwa'
         })
     }
+    /* clickHandler() {
+       console.log(this)
+       this.setState({
+           message: 'Goodbye'
+       })
+   } */
     render() {
         //using bind im tying clickhandler to this keyword -- binding in render method
         return (
