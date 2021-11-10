@@ -1,7 +1,7 @@
 import React from 'react'
 //demo on inline styling
 const heading = {
-    fontSize: '80px',
+    fontSize: '50px',
     color: 'red'
 }
 
