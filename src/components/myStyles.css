@@ -1,3 +1,7 @@
 .primary{
     color: rgb(124, 0, 128);
 }
+
+.font-xl{
+    font-size: 50px;
+}

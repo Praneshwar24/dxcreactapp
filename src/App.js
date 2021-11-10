@@ -15,29 +15,11 @@ import StyleSheet from './components/StyleSheet';
 function App() {
   return (
     <div className="App">
-      <StyleSheet enabled = {false}/>
+      <StyleSheet enabled = {true}/>
       <NameList/>
       <UserGreeting/>
       <ParentComponent />
       <EventBind />
-
-
-      {/*  <ClassClick />
-
-      <FunctionClick />
-
-      <Counter />
-
-      <Message />
-      <Greet name="Praneshwar" college="IIT">
-        <p>this is children property</p>
-      </Greet>
-      <Greet name="Roy" college="MIT">
-        <button>click me</button>
-      </Greet>
-      <Greet />
-
-      <Welcome name="Abbishek" alias="Roy" /> */}
     </div>
   );
 }
