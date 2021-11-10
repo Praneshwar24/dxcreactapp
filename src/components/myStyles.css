@@ -5,3 +5,11 @@
 .font-xl{
     font-size: 70px;
 }
+
+.font{
+    font-style: italic;
+}
+
+.background-clr{
+    background-color: lawngreen;
+}
