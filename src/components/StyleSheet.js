@@ -2,6 +2,7 @@ import React from 'react'
 import './myStyles.css'
 
 function StyleSheet(props) {
+    //literal-$, template - {}, attribute - name
     let className = props.enabled ? 'primary' : ''
     return (
         <div>
