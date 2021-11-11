@@ -16,11 +16,14 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form';
 import Fragments from './components/Fragments';
+import NewTable from './components/NewTable';
 
 function App() {
   return (
     <div className="App">
-      <Fragments />
+      <NewTable/>
+
+      {/* <Fragments />
       <Form />
       <h1 className={styles.success}>success</h1>
       <h1 className='error'>error</h1>
@@ -31,7 +34,7 @@ function App() {
       <NameList />
       <UserGreeting />
       <ParentComponent />
-      <EventBind />
+      <EventBind /> */}
     </div>
   );
 }
