@@ -17,24 +17,14 @@ import styles from './appStyles.module.css'
 import Form from './components/Form';
 import Fragments from './components/Fragments';
 import NewTable from './components/NewTable';
+import Parentcomp from './components/Parentcomp';
+import PureComp from './components/PureComp';
 
 function App() {
   return (
     <div className="App">
-      <NewTable/>
+      <Parentcomp />
 
-      {/* <Fragments />
-      <Form />
-      <h1 className={styles.success}>success</h1>
-      <h1 className='error'>error</h1>
-
-
-      <Inline />
-      <StyleSheet enabled={true} />
-      <NameList />
-      <UserGreeting />
-      <ParentComponent />
-      <EventBind /> */}
     </div>
   );
 }
