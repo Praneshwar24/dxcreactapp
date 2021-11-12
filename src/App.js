@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import RefsDemo from './components/refs/RefsDemo';
+
+import FocusInput from './components/refs/FocusInput';
 
 
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
-
+      <FocusInput />
 
     </div>
   );
