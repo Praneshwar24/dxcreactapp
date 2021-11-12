@@ -14,7 +14,7 @@ class Parentcomp extends PureComponent {
     componentDidMount() {
         setInterval(() => {
             this.setState({
-                name: 'Praneshwar-parentcomp-memo'
+                name: 'Praneshwar-parentcomp-memo1'
             })
         }, 2000);
     }
