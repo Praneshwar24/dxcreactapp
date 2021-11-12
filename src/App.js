@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import RefsDemo from './components/RefsDemo';
+import RefsDemo from './components/refs/RefsDemo';
 
 
 function App() {
