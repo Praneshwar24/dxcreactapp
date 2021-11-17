@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import CounterHook1 from './components/hooks/useeffect/CounterHook1';
+import HookMouse from './components/hooks/useeffect/HookMouse';
+
 
 
 
@@ -10,7 +11,7 @@ import CounterHook1 from './components/hooks/useeffect/CounterHook1';
 function App() {
   return (
     <div className="App">
-      <CounterHook1 />
+      <HookMouse />
     </div>
   );
 }
