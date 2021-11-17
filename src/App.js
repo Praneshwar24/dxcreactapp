@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import HookMouse from './components/hooks/useeffect/HookMouse';
+import MouseContainer from './components/hooks/useeffect/MouseContainer';
+
 
 
 
@@ -11,7 +12,7 @@ import HookMouse from './components/hooks/useeffect/HookMouse';
 function App() {
   return (
     <div className="App">
-      <HookMouse />
+      <MouseContainer />
     </div>
   );
 }
