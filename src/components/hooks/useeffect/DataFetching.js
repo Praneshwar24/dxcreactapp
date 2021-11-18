@@ -4,6 +4,7 @@ function DataFetching() {
 
     const [post, setPost] = useState([])
     const [id, setId] = useState(1)
+    const [idFromButtonClick, setidFromButtonClick] = useState(1)
     //Promise -- Deferred obj in kotlin--
     /* 
         useEffect is about the lifecycle methods of a class component --
@@ -11,7 +12,7 @@ function DataFetching() {
     useEffect(
         //the arrow function below will get executed after every render
         () => {
-            axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+            axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
                 .then(res => {
                     console.log(res)
                     setPost(res.data)
@@ -21,8 +22,11 @@ function DataFetching() {
                 })
 
         },
-        [id] //run this useEffect hook only once ie after componentDidMount
+        [idFromButtonClick] //run this useEffect hook only once ie after componentDidMount
     )
+    const handleClick = () => {
+        setidFromButtonClick(id)
+    }
     return (
         <div>
             <input
@@ -30,6 +34,8 @@ function DataFetching() {
                 value={id}
                 onChange={e => setId(e.target.value)}
             />
+            <button type="button" onClick={handleClick}>Fetch post</button>
+
             <div>{post.title}</div>
             {/*  <ul>
                 {
