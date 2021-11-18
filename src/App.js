@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import MouseContainer from './components/hooks/useeffect/MouseContainer';
+import DataFetching from './components/hooks/useeffect/DataFetching';
+import axios from 'axios';
 
 
 
@@ -12,7 +13,7 @@ import MouseContainer from './components/hooks/useeffect/MouseContainer';
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <DataFetching />
     </div>
   );
 }
