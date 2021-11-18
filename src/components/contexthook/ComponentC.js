@@ -1,11 +1,25 @@
 import React from 'react'
-import { UserContext } from '../../App'
+import { UserContext, BatchContext } from '../../App'
 
 function ComponentC() {
     return (
         <div>
             <UserContext.Consumer>
-                {user => { return <h1>Component C {user}</h1> }}
+                {
+                    user => {
+                        return (
+                            <BatchContext.Consumer>
+                                {
+                                    batch => {
+                                        return <div>
+                                            Username is {user}, his batch is {batch}
+                                        </div>
+                                    }
+                                }
+                            </BatchContext.Consumer>
+                        )
+                    }
+                }
             </UserContext.Consumer>
         </div>
     )

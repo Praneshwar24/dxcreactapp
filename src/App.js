@@ -4,12 +4,15 @@ import axios from 'axios';
 import ComponentA from './components/contexthook/ComponentA';
 import React from 'react';
 export const UserContext = React.createContext()
+export const BatchContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
       <UserContext.Provider value={'Praneshwar'}>
-        <ComponentA />
+        <BatchContext.Provider value={'DXC Batch 2'}>
+          <ComponentA />
+        </BatchContext.Provider>
       </UserContext.Provider>
     </div>
   );
