@@ -1,6 +1,6 @@
 import React from 'react'
 import { useReducer } from 'react'
-//demo about state as an object
+//demo about state as an object as well as action as an object
 const initialState = {   //currently this object has only one partition called firstCounter
     firstCounter: 0,
     secondCounter: 10
