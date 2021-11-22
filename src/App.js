@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { useReducer } from 'react';
-
-import DataFetching from './components/useReducercases/DataFetching';
+import DataFetchingTwo from './components/useReducercases/DataFetchingTwo';
 
 
 export const CountContext = React.createContext()
@@ -22,7 +21,7 @@ function App() {
   return (
 
     <div className="App">
-      <DataFetching />
+      <DataFetchingTwo />
     </div>
 
   );
