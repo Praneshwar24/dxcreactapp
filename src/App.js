@@ -2,9 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { useReducer } from 'react';
-import CompA from './components/contextNreducer/CompA';
-import CompB from './components/contextNreducer/CompB';
-import CompC from './components/contextNreducer/CompC';
+
+import DataFetching from './components/useReducercases/DataFetching';
 
 
 export const CountContext = React.createContext()
@@ -19,19 +18,13 @@ const reducer = (state, action) => {
   }
 }
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+
   return (
-    <CountContext.Provider
-      value={
-        { countState: count, countDispatch: dispatch }
-      }>
-      <div className="App">
-        Count in app.js is {count}
-        <CompA />
-        <CompB />
-        <CompC />
-      </div>
-    </CountContext.Provider>
+
+    <div className="App">
+      <DataFetching />
+    </div>
+
   );
 }
 
