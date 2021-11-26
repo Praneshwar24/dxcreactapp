@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import HoverCounter from './components/higherorderComponents/HoverCounter';
-import ClickCounter from './components/higherorderComponents/ClickCounter';
+import DocTitle from './components/customhooks/DocTitle';
+import DocTitle2 from './components/customhooks/DocTitle2';
+
 
 
 function App() {
@@ -10,8 +11,8 @@ function App() {
   return (
 
     <div className="App">
-      <ClickCounter />
-      <HoverCounter />
+      <DocTitle />
+      <DocTitle2 />
     </div>
 
   );
